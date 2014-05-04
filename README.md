@@ -8,7 +8,7 @@ About
 -------------------------------------------------------------------------------
 Board'em is a single player fast paced collection game written in Unity for
 the web. It is the result of a very boring weekend and a desire to do something.
-Anything.
+Anything. You can play it at <http://kingcoyote.github.io/boardem>.
 
 Game
 -------------------------------------------------------------------------------
