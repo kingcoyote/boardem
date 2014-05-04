@@ -44,8 +44,8 @@ public class GameScript : MonoBehaviour {
 	void OnGUI() {
 		if (!IsGameOver) return;
 
-		const int buttonWidth = 84;
-		const int buttonHeight = 60;
+		const int buttonWidth = 160;
+		const int buttonHeight = 35;
 
 		if (GUI.Button(
 			// Center in X, 2/3 of the height in Y
