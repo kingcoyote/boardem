@@ -37,8 +37,16 @@ public class GameScript : MonoBehaviour {
 		foreach (var g in Geysers) {
 			g.Disable ();
 		}
+
+
+	}
+
+	void OnGUI() {
+		if (!IsGameOver) return;
+
 		const int buttonWidth = 84;
 		const int buttonHeight = 60;
+
 		if (GUI.Button(
 			// Center in X, 2/3 of the height in Y
 			new Rect(
@@ -49,10 +57,10 @@ public class GameScript : MonoBehaviour {
 			),
 			"Restart!"
 			)) {
-			Application.LoadLevel (0);
+			Application.LoadLevel ("game");
 		}
 	}
-	
+
 	public void PlayerHit(BulletScript shot) {
 
 		var explosion = Instantiate (shot.Explosion) as Transform;
